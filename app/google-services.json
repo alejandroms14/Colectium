@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "841755227246",
+    "firebase_url": "https://pokemondb-dam-default-rtdb.firebaseio.com",
+    "project_id": "pokemondb-dam",
+    "storage_bucket": "pokemondb-dam.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:841755227246:android:925eedec39fbceb3b2627f",
+        "android_client_info": {
+          "package_name": "com.example.pokemon_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "841755227246-87bf8alsr2d885abvammmq71etcjs80v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqzZQuVFeJN1Q5sikD3rztydDWFcMgYgs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "841755227246-87bf8alsr2d885abvammmq71etcjs80v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

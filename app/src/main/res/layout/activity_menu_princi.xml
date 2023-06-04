@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/funko_fondo"
+    tools:context=".menu.vistas.MenuPrinci">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="298dp"
+        android:layout_height="141dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/titulo" />
+
+    <Button
+        android:id="@+id/btnPokemon"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/bordes_redondos"
+        android:backgroundTint="@color/purple_500"
+        android:onClick="menuPokemon"
+        android:text="Pokemon"
+        app:layout_constraintEnd_toEndOf="@+id/imageView6"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <Button
+        android:id="@+id/btnFunkos"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bordes_redondos"
+        android:backgroundTint="@color/purple_500"
+        android:onClick="menuFunkos"
+        android:text="Funkos"
+        app:layout_constraintEnd_toEndOf="@+id/btnPokemon"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnPokemon"
+        app:layout_constraintTop_toBottomOf="@+id/btnPokemon" />
+
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/bordes_redondos"
+        android:backgroundTint="@color/purple_500"
+        android:onClick="menuSalir"
+        android:text="Cerrar Sesion"
+        app:layout_constraintEnd_toEndOf="@+id/btnFunkos"
+        app:layout_constraintStart_toStartOf="@+id/btnFunkos"
+        app:layout_constraintTop_toBottomOf="@+id/btnFunkos" />
+</androidx.constraintlayout.widget.ConstraintLayout>

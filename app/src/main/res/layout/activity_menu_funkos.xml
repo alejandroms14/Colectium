@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".menu.vistas.MenuFunkos">
+
+    <Button
+        android:id="@+id/btn_addFunko"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/bordes_redondos"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:onClick="addFunkos"
+        android:text="Crear Funko"
+        app:layout_constraintEnd_toEndOf="@+id/imageView8"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btn_borrarFunko"
+        android:layout_width="291dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bordes_redondos"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:onClick="borrarFunko"
+        android:text="Borrar Funko"
+        app:layout_constraintEnd_toEndOf="@+id/btn_addFunko"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_addFunko"
+        app:layout_constraintTop_toBottomOf="@+id/btn_addFunko"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btn_mostrarFunko"
+        android:layout_width="291dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bordes_redondos"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:onClick="mostrarFunko"
+        android:text="Mostrar Funko"
+        app:layout_constraintEnd_toEndOf="@+id/btn_borrarFunko"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_borrarFunko"
+        app:layout_constraintTop_toBottomOf="@+id/btn_borrarFunko"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btn_addPokemon6"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bordes_redondos"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:onClick="salirmenu"
+        android:text="Salir"
+        app:layout_constraintEnd_toEndOf="@+id/btn_mostrarFunko"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_mostrarFunko"
+        app:layout_constraintTop_toBottomOf="@+id/btn_mostrarFunko"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="291dp"
+        android:layout_height="138dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/funko_titulo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".menu.vistas.editarFunkoActivity">
+
+    <Button
+        android:id="@+id/btnEditarFunko"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="196dp"
+        android:background="@drawable/bordes_redondos"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:onClick="crearFunko"
+        android:text="Editar Funko"
+        app:layout_constraintEnd_toEndOf="@+id/edtCategoriaFunko2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtCategoriaFunko2"
+        app:layout_constraintTop_toBottomOf="@+id/edtCategoriaFunko2" />
+
+    <Button
+        android:id="@+id/btn_addImfFunko2"
+        android:layout_width="107dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/bordes_redondos"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="Imagen"
+        app:layout_constraintEnd_toEndOf="@+id/edtCategoriaFunko2"
+        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintStart_toEndOf="@+id/img_funkoUpdate2"
+        app:layout_constraintTop_toBottomOf="@+id/edtCategoriaFunko2" />
+
+    <ImageView
+        android:id="@+id/img_funkoUpdate2"
+        android:layout_width="173dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="@+id/edtCategoriaFunko2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtCategoriaFunko2"
+        app:layout_constraintTop_toBottomOf="@+id/edtCategoriaFunko2"
+        app:srcCompat="@drawable/funko_titulo" />
+
+    <EditText
+        android:id="@+id/edtCategoriaFunko2"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Categoria"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/edtNombreFunko2"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/edtNombreFunko2"
+        app:layout_constraintTop_toBottomOf="@+id/edtNombreFunko2" />
+
+    <EditText
+        android:id="@+id/edtNombreFunko2"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/edtIdFunko2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtIdFunko2"
+        app:layout_constraintTop_toBottomOf="@+id/edtIdFunko2" />
+
+    <EditText
+        android:id="@+id/edtIdFunko2"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="id Funko"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/imageView10"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/imageView10"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="327dp"
+        android:layout_height="148dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/funko_titulo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

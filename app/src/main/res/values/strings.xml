@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Pokemon-FireBase</string>
+    <string name="registrar">Registrar</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="login">Login</string>
+    <string name="todo">TODO</string>
+
+    <string name="crear_pokemon">Crear Pokemon</string>
+    <string name="editar_pokemon">Editar Pokemon</string>
+    <string name="borrar_pokemon">Borrar Pokemon</string>
+    <string name="mostrar_pokemon">Mostrar Pokemon</string>
+    <string name="correo_electronicoRegistro">Correo Electronico</string>
+    <string name="contrase_aRegistro">Contraseña</string>
+    <string name="string_contrase_a" />
+    <string name="string_string_contrase_a">passwordRegistro</string>
+    <string name="password">Password</string>
+    <string name="crear_entrenador">Crear Entrenador</string>
+    <string name="correo_electronico">Correo electronico</string>
+    <string name="id_pokemon">Id Pokemon</string>
+    <string name="nombre_pokemon">Nombre Pokemon</string>
+    <string name="ataque_pokemon">Ataque Pokemon</string>
+    <string name="defensa_pokemon">Defensa Pokemon</string>
+    <string name="debildad_pokemon">Debildad Pokemon</string>
+    <string name="imagen">Imagen</string>
+    <string name="a_adir_pokemon">AÑADIR POKEMON</string>
+    <string name="a_adir_pokemonmostar">añadir pokemon</string>
+    <string name="salir">salir</string>
+    <string name="cerrar">Cerrar</string>
+    <string name="add_pokemon">ADD POKEMON</string>
+    <string name="salirmostrar">SALIR</string>
+    <string name="defensa">Defensa</string>
+    <string name="ataque">Ataque</string>
+    <string name="pokemon">Pokemon</string>
+    <string name="clave_del_pokemon_en_firebase">Clave del Pokemon en FireBase</string>
+    <string name="todo1">TODO</string>
+    <string name="borrar_pokemon1">Borrar Pokemon</string>
+    <string name="resultado_firebase">Resultado FireBase</string>
+    <string name="clave">Clave</string>
+    <string name="editar_pokemon1">Editar Pokemon</string>
+    <string name="todo12">TODO</string>
+    <string name="todo14">TODO</string>
+    <string name="ataque_pokemon2">Ataque Pokemon</string>
+    <string name="nombre_pokemon2">Nombre Pokemon</string>
+    <string name="idpokemon">IdPokemon</string>
+    <string name="debilidad_pokemon">Debilidad Pokemon</string>
+    <string name="defensa_pokemo2n">Defensa Pokemon</string>
+    <string name="salirDetalle">Salir</string>
+    <string name="actualizar">Actualizar</string>
+    <string name="borrar">Borrar</string>
+    <string name="todo2">TODO</string>
+    <string name="todo3">TODO</string>
+
+</resources>

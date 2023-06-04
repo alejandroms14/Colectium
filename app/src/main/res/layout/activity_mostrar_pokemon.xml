@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/degradado"
+    tools:context=".menu.vistas.mostrarPokemonActivity">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="340dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/titulopokemongo" />
+
+    <Button
+        android:id="@+id/btn_addPokemonMostar"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:background="@drawable/bordes_redondos"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:onClick="addPokemon1"
+        android:text="@string/add_pokemon"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_salirPokemonMostar"
+        app:layout_constraintStart_toStartOf="@+id/rv_funkoMostrar"
+        app:layout_constraintTop_toBottomOf="@+id/rv_funkoMostrar"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btn_salirPokemonMostar"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bordes_redondos"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:onClick="salir"
+        android:text="@string/salirmostrar"
+        app:layout_constraintEnd_toEndOf="@+id/rv_funkoMostrar"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btn_addPokemonMostar"
+        app:layout_constraintTop_toBottomOf="@+id/rv_funkoMostrar"
+        tools:ignore="TextContrastCheck" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_funkoMostrar"
+        android:layout_width="342dp"
+        android:layout_height="485dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

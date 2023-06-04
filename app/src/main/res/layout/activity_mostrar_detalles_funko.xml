@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".menu.vistas.MostrarDetallesFunkoActivity">
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="327dp"
+        android:layout_height="148dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/funko_titulo" />
+
+    <EditText
+        android:id="@+id/edt_detalle_idFunko"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="id Funko"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/imageView12"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/imageView12"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+    <EditText
+        android:id="@+id/edt_detalle_nombre"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/edt_detalle_idFunko"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_detalle_idFunko"
+        app:layout_constraintTop_toBottomOf="@+id/edt_detalle_idFunko" />
+
+    <EditText
+        android:id="@+id/edt_detalle_categoria"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Categoria"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/edt_detalle_nombre"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_detalle_nombre"
+        app:layout_constraintTop_toBottomOf="@+id/edt_detalle_nombre" />
+
+    <ImageView
+        android:id="@+id/img_detalle_funko"
+        android:layout_width="0dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="@+id/edt_detalle_categoria"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/edt_detalle_categoria"
+        app:layout_constraintTop_toBottomOf="@+id/edt_detalle_categoria"
+        app:srcCompat="@drawable/funko_titulo" />
+
+    <Button
+        android:id="@+id/btn_detalle_actualizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/bordes_redondos"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="Actualizar"
+        android:onClick="actualizarFunko"
+        app:layout_constraintEnd_toEndOf="@+id/img_detalle_funko"
+        app:layout_constraintStart_toStartOf="@+id/img_detalle_funko"
+        app:layout_constraintTop_toBottomOf="@+id/img_detalle_funko" />
+
+    <Button
+        android:id="@+id/edt_detalle_borrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/bordes_redondos"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="Borrar"
+        android:onClick="borrar_Funko"
+        app:layout_constraintEnd_toEndOf="@+id/img_detalle_funko"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/img_detalle_funko"
+        app:layout_constraintTop_toBottomOf="@+id/img_detalle_funko" />
+
+    <Button
+        android:id="@+id/edt_detalle_salir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/bordes_redondos"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="Salir"
+        android:onClick="salirDetalleFunko"
+        app:layout_constraintEnd_toEndOf="@+id/img_detalle_funko"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/edt_detalle_borrar"
+        app:layout_constraintTop_toBottomOf="@+id/img_detalle_funko" />
+</androidx.constraintlayout.widget.ConstraintLayout>

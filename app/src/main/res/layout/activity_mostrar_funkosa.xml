@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".menu.vistas.mostrarFunkosaActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_funkoMostrar"
+        android:layout_width="342dp"
+        android:layout_height="485dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView13"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="@+id/imageView13"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="328dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/funko_titulo" />
+
+    <Button
+        android:id="@+id/btnAddFunkoMostrar"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/bordes_redondos"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="Add Funko"
+        android:onClick="addFunko"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/rv_funkoMostrar"
+        app:layout_constraintTop_toBottomOf="@+id/rv_funkoMostrar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnSalirFunkoMostrar"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/bordes_redondos"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="Salir"
+        app:layout_constraintEnd_toEndOf="@+id/rv_funkoMostrar"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btnAddFunkoMostrar"
+        app:layout_constraintTop_toBottomOf="@+id/rv_funkoMostrar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

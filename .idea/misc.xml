@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/amend/AndroidStudioProjects/PokemonFireBase/app/src/main/res/layout/activity_add_entrenador.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/amend/AndroidStudioProjects/PokemonFireBase/app/src/main/res/layout/activity_add_pokemon_activitty.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/amend/AndroidStudioProjects/PokemonFireBase/app/src/main/res/layout/activity_borrar_pokemon.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/amend/AndroidStudioProjects/PokemonFireBase/app/src/main/res/layout/activity_crear_pokemon.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/amend/AndroidStudioProjects/PokemonFireBase/app/src/main/res/layout/activity_editar_pokemon.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/amend/AndroidStudioProjects/PokemonFireBase/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/amend/AndroidStudioProjects/PokemonFireBase/app/src/main/res/layout/activity_menu_pokemon.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/amend/AndroidStudioProjects/PokemonFireBase/app/src/main/res/layout/activity_menu_pokemon2.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/amend/AndroidStudioProjects/PokemonFireBase/app/src/main/res/layout/activity_mostrar_detalles_pokemon.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/amend/AndroidStudioProjects/PokemonFireBase/app/src/main/res/layout/activity_mostrar_pokemon.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/amend/AndroidStudioProjects/PokemonFireBase/app/src/main/res/layout/item_recycleview_pokemon.xml" value="0.36666666666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

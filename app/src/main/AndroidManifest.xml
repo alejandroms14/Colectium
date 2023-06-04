@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pokemon_firebase">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.NoActionBar">
+        <activity
+            android:name=".menu.vistas.mostrarFunkosaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".menu.vistas.MostrarDetallesFunkoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".menu.vistas.BorrarFunkoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".menu.vistas.editarFunkoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".menu.vistas.addMFunkosActivitty"
+            android:exported="false" />
+        <activity
+            android:name=".menu.vistas.MenuFunkos"
+            android:exported="false" />
+        <activity
+            android:name=".menu.vistas.BorrarPokemonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".menu.vistas.editarPokemonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".menu.vistas.MostrarDetallesPokemonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".menu.vistas.mostrarPokemonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".menu.vistas.addEntrenador"
+            android:exported="false" />
+        <activity
+            android:name=".menu.vistas.MenuPrinci"
+            android:exported="false" />
+        <activity
+            android:name=".menu.vistas.Registro"
+            android:exported="false" />
+        <activity
+            android:name=".menu.vistas.addPokemonActivitty"
+            android:exported="false" />
+        <activity
+            android:name=".menu.vistas.menuPokemon"
+            android:exported="false" />
+        <activity
+            android:name=".menu.vistas.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

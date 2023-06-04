@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/degradado"
+    tools:context=".menu.vistas.addPokemonActivitty">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="286dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/titulopokemongo" />
+
+    <EditText
+        android:id="@+id/edt_idPokemonUpdate"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="@string/id_pokemon"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/edt_nombrePokemonUpdate"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/nombre_pokemon"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/edt_idPokemonUpdate"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/edt_debilidadPokemonUpdate"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/debildad_pokemon"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/edt_defensaRegistroUpdate"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_defensaRegistroUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/edt_defensaRegistroUpdate"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/btn_imgpokemonUpdate"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/bordes_redondos"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:onClick="cambiarImagenPokemon"
+        android:text="@string/imagen"
+        app:layout_constraintEnd_toEndOf="@+id/edt_debilidadPokemonUpdate"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/img_pokemonUpdate"
+        app:layout_constraintTop_toTopOf="@+id/img_pokemonUpdate"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/img_pokemonUpdate"
+        android:layout_width="153dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="@+id/edt_debilidadPokemonUpdate"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_debilidadPokemonUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/edt_debilidadPokemonUpdate"
+        app:srcCompat="@drawable/masterlogo" />
+
+    <Button
+        android:id="@+id/btn_updatePokemonUpdate"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/bordes_redondos"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:onClick="crearPokemon"
+        android:text="@string/a_adir_pokemon"
+        app:layout_constraintEnd_toEndOf="@+id/edt_debilidadPokemonUpdate"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_debilidadPokemonUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/img_pokemonUpdate"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/edt_ataqueRegistroUpdate"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Ataque Pokemon"
+        android:inputType="numberSigned"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/edt_nombrePokemonUpdate"
+        app:layout_constraintStart_toStartOf="@+id/edt_nombrePokemonUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/edt_nombrePokemonUpdate" />
+
+    <EditText
+        android:id="@+id/edt_defensaRegistroUpdate"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Defensa Pokemon"
+        android:inputType="numberSigned"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/edt_ataqueRegistroUpdate"
+        app:layout_constraintStart_toStartOf="@+id/edt_ataqueRegistroUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/edt_ataqueRegistroUpdate" />
+</androidx.constraintlayout.widget.ConstraintLayout>
