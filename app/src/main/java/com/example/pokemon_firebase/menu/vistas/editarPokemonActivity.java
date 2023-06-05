@@ -72,10 +72,6 @@ public class editarPokemonActivity extends AppCompatActivity {
         String debilidadPokemon = String.valueOf(edt_debilidadPokemonUpdate.getText());
 
         //------------------------------- Validacion--------------------------------
-        if(idPokemon.isEmpty() || nombrePokemon.isEmpty() || ataquePokemon.isEmpty() || defensaPokemon.isEmpty() ||debilidadPokemon.isEmpty()){
-            Toast.makeText(editarPokemonActivity.this, "Rellene todos los campos", Toast.LENGTH_SHORT).show(); //mensaje que se muestra al usuario
-            return;
-        }
         if(idPokemon.isEmpty()){
             Toast.makeText(editarPokemonActivity.this, "Pon un id de Pokemon", Toast.LENGTH_SHORT).show(); //mensaje que se muestra al usuario
             return;

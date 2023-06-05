@@ -67,11 +67,7 @@ public class editarFunkoActivity extends AppCompatActivity {
         String nombreFunko = String.valueOf(nombreFunkoUpdate.getText());
         String categoriaFunko = String.valueOf(categoriaFunkoUpdate.getText());
         //------------------------------- Validacion--------------------------------
-        if(idFunko.isEmpty() || nombreFunko.isEmpty() || categoriaFunko.isEmpty()){
-            Toast.makeText(editarFunkoActivity.this, "Rellene todos los campos", Toast.LENGTH_SHORT).show(); //mensaje que se muestra al usuario
-            return;
-        }
-        else if(idFunko.isEmpty()){
+        if(idFunko.isEmpty()){
             Toast.makeText(editarFunkoActivity.this, "Pon un id al Funko", Toast.LENGTH_SHORT).show();
             return;
         }

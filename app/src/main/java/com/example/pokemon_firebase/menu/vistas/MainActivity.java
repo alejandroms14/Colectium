@@ -60,10 +60,6 @@ public class MainActivity extends AppCompatActivity {
         String email = String.valueOf(edt_email.getText());
         String password = String.valueOf(edt_clave.getText());
         //------------------------------- Validacion--------------------------------
-        if(email.isEmpty() || password.isEmpty()){
-            Toast.makeText(MainActivity.this, "Rellene todos los campos", Toast.LENGTH_SHORT).show(); //mensaje que se muestra al usuario
-            return;
-        }
         if(email.isEmpty()){
             Toast.makeText(MainActivity.this, "Escriba un correo", Toast.LENGTH_SHORT).show(); //mensaje que se muestra al usuario
             return;

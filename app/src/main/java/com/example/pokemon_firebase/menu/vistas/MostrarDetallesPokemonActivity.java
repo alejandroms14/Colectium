@@ -139,10 +139,6 @@ public class MostrarDetallesPokemonActivity extends AppCompatActivity {
         String debilidadDetallePokemon = String.valueOf(edt_detalle_debilidadPokemon.getText());
 
         //------------------------------- Validacion--------------------------------
-        if(idPokemonDetallePokemon.isEmpty() || nombreDetallePokemon.isEmpty() || ataqueDetallePokemon.isEmpty() || defensaDetallePokemon.isEmpty() || debilidadDetallePokemon.isEmpty()){
-            Toast.makeText(MostrarDetallesPokemonActivity.this, "Rellene todos los campos", Toast.LENGTH_SHORT).show(); //mensaje que se muestra al usuario
-            return;
-        }
         if(idPokemonDetallePokemon.isEmpty()){
             Toast.makeText(MostrarDetallesPokemonActivity.this, "Pon un id de Pokemon", Toast.LENGTH_SHORT).show(); //mensaje que se muestra al usuario
             return;
