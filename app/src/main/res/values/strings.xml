@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Pokemon-FireBase</string>
+    <string name="app_name">Colectium</string>
     <string name="registrar">Registrar</string>
     <string name="contrase_a">Contraseña</string>
     <string name="login">Login</string>
@@ -49,5 +49,6 @@
     <string name="borrar">Borrar</string>
     <string name="todo2">TODO</string>
     <string name="todo3">TODO</string>
+    <string name="title_activity_map">Activity_map</string>
 
 </resources>

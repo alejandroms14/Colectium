@@ -105,9 +105,13 @@ public class addPokemonActivitty extends AppCompatActivity {
             }, email, idPokemon, img_insertar_foto);
 
             p = new Pokemon(idPokemon, nombrePokemon, ataquePokemon, defensaPokemon, debilidadPokemon, email + "/" + String.valueOf(idPokemon) + ".png");
+            Intent intent = new Intent(this, menuPokemon.class);
+            startActivity(intent);
         }
         else{
             p = new Pokemon(idPokemon,nombrePokemon,ataquePokemon,defensaPokemon,debilidadPokemon,null);
+            Intent intent = new Intent(this, menuPokemon.class);
+            startActivity(intent);
         }
         new PokemonFirebaseController().insertarPokemon(new PokemonFirebaseController.PokemonStatus() {
             @Override
@@ -120,6 +124,7 @@ public class addPokemonActivitty extends AppCompatActivity {
                 // aquí hay que poner cuando se haya insertado bien qué hacer
                 Toast.makeText(addPokemonActivitty.this,"insercion correcta",Toast.LENGTH_LONG).show();
                 finish();
+
             }
 
             @Override

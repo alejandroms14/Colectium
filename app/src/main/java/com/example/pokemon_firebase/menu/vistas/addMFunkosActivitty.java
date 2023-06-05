@@ -90,9 +90,13 @@ public class addMFunkosActivitty extends AppCompatActivity {
             },email, idFunko, img_insertar_foto);
 
             f = new Funko(idFunko,nombreFunko,categoriaFunko,email+"/"+String.valueOf(idFunko)+".png");
+            Intent intent = new Intent(this, MenuFunkos.class);
+            startActivity(intent);
         }
         else{
             f = new Funko(idFunko,nombreFunko,categoriaFunko,null);
+            Intent intent = new Intent(this, MenuFunkos.class);
+            startActivity(intent);
         }
         new FunkoFirebaseController().insertarFunko(new FunkoFirebaseController.FunkoStatus() {
             @Override
@@ -102,7 +106,8 @@ public class addMFunkosActivitty extends AppCompatActivity {
 
             @Override
             public void funkoIsAdd() {
-
+                Toast.makeText(addMFunkosActivitty.this,"insercion correcta",Toast.LENGTH_LONG).show();
+                finish();
             }
 
             @Override

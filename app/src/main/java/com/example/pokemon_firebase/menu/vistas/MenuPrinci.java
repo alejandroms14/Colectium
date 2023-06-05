@@ -31,4 +31,8 @@ public class MenuPrinci extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void menuInfo(View view) {
+        Intent intent = new Intent(this, activity_infApp.class);
+        startActivity(intent);
+    }
 }
