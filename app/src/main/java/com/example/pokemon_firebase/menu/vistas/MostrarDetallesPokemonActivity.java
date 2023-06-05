@@ -138,8 +138,29 @@ public class MostrarDetallesPokemonActivity extends AppCompatActivity {
         String defensaDetallePokemon = String.valueOf(edt_detalle_defensaPokemon.getText());
         String debilidadDetallePokemon = String.valueOf(edt_detalle_debilidadPokemon.getText());
 
-        if(idPokemonDetallePokemon.isEmpty() || nombreDetallePokemon.isEmpty() || ataqueDetallePokemon.isEmpty() || defensaDetallePokemon.isEmpty() ||debilidadDetallePokemon.isEmpty()){
+        //------------------------------- Validacion--------------------------------
+        if(idPokemonDetallePokemon.isEmpty() || nombreDetallePokemon.isEmpty() || ataqueDetallePokemon.isEmpty() || defensaDetallePokemon.isEmpty() || debilidadDetallePokemon.isEmpty()){
             Toast.makeText(MostrarDetallesPokemonActivity.this, "Rellene todos los campos", Toast.LENGTH_SHORT).show(); //mensaje que se muestra al usuario
+            return;
+        }
+        if(idPokemonDetallePokemon.isEmpty()){
+            Toast.makeText(MostrarDetallesPokemonActivity.this, "Pon un id de Pokemon", Toast.LENGTH_SHORT).show(); //mensaje que se muestra al usuario
+            return;
+        }
+        else if(nombreDetallePokemon.isEmpty()){
+            Toast.makeText(MostrarDetallesPokemonActivity.this, "Pon un nombre al Pokemon", Toast.LENGTH_SHORT).show(); //mensaje que se muestra al usuario
+            return;
+        }
+        else if(ataqueDetallePokemon.isEmpty()){
+            Toast.makeText(MostrarDetallesPokemonActivity.this, "Pon un ataque al Pokemon", Toast.LENGTH_SHORT).show(); //mensaje que se muestra al usuario
+            return;
+        }
+        else if(defensaDetallePokemon.isEmpty()){
+            Toast.makeText(MostrarDetallesPokemonActivity.this, "Pon una defensa al Pokemon", Toast.LENGTH_SHORT).show(); //mensaje que se muestra al usuario
+            return;
+        }
+        else if(debilidadDetallePokemon.isEmpty()){
+            Toast.makeText(MostrarDetallesPokemonActivity.this, "Pon una debilidad al Pokemon", Toast.LENGTH_SHORT).show(); //mensaje que se muestra al usuario
             return;
         }
 

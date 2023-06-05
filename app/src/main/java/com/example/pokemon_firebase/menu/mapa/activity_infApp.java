@@ -1,19 +1,14 @@
-package com.example.pokemon_firebase.menu.vistas;
+package com.example.pokemon_firebase.menu.mapa;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.pokemon_firebase.R;
-import com.example.pokemon_firebase.menu.clases.ListaFunkoAdapter;
-import com.example.pokemon_firebase.menu.clases.ListaPokemonAdapter;
-import com.example.pokemon_firebase.menu.mapa.Activity_map;
-import com.example.pokemon_firebase.menu.mapa.Mapa;
+import com.example.pokemon_firebase.menu.vistas.MainActivity;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -22,8 +17,6 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-
-import java.util.Map;
 
 public class activity_infApp extends AppCompatActivity implements OnMapReadyCallback, GoogleMap.OnMapClickListener, GoogleMap.OnMapLongClickListener {
 

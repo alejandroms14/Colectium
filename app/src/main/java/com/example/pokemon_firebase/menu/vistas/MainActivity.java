@@ -59,8 +59,21 @@ public class MainActivity extends AppCompatActivity {
     public void login(View view) {
         String email = String.valueOf(edt_email.getText());
         String password = String.valueOf(edt_clave.getText());
+        //------------------------------- Validacion--------------------------------
         if(email.isEmpty() || password.isEmpty()){
             Toast.makeText(MainActivity.this, "Rellene todos los campos", Toast.LENGTH_SHORT).show(); //mensaje que se muestra al usuario
+            return;
+        }
+        if(email.isEmpty()){
+            Toast.makeText(MainActivity.this, "Escriba un correo", Toast.LENGTH_SHORT).show(); //mensaje que se muestra al usuario
+            return;
+        }
+        else if(password.isEmpty()){
+            Toast.makeText(MainActivity.this, "Escriba una contraseña", Toast.LENGTH_SHORT).show(); //mensaje que se muestra al usuario
+            return;
+        }
+        else if(password.length() < 6){
+            Toast.makeText(MainActivity.this, "Escriba una contraseña de mas de 6 caracteres", Toast.LENGTH_SHORT).show(); //mensaje que se muestra al usuario
             return;
         }
         mAuth.signInWithEmailAndPassword(email, password)

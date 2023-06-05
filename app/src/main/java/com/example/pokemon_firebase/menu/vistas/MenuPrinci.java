@@ -7,6 +7,7 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.pokemon_firebase.R;
+import com.example.pokemon_firebase.menu.mapa.activity_infApp;
 
 public class MenuPrinci extends AppCompatActivity {
 

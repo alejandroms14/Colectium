@@ -80,9 +80,29 @@ public class addPokemonActivitty extends AppCompatActivity {
         String ataquePokemon = ataquePokemonRegistro.getText().toString();
         String defensaPokemon = ataquePokemonRegistro.getText().toString();
         String debilidadPokemon = String.valueOf(debilidadPokemonReigistro.getText());
-
+        //------------------------------- Validacion--------------------------------
         if(idPokemon.isEmpty() || nombrePokemon.isEmpty() || ataquePokemon.isEmpty() || defensaPokemon.isEmpty() ||debilidadPokemon.isEmpty()){
             Toast.makeText(addPokemonActivitty.this, "Rellene todos los campos", Toast.LENGTH_SHORT).show(); //mensaje que se muestra al usuario
+            return;
+        }
+        if(idPokemon.isEmpty()){
+            Toast.makeText(addPokemonActivitty.this, "Pon un id de Pokemon", Toast.LENGTH_SHORT).show(); //mensaje que se muestra al usuario
+            return;
+        }
+        else if(nombrePokemon.isEmpty()){
+            Toast.makeText(addPokemonActivitty.this, "Pon un nombre al Pokemon", Toast.LENGTH_SHORT).show(); //mensaje que se muestra al usuario
+            return;
+        }
+        else if(ataquePokemon.isEmpty()){
+            Toast.makeText(addPokemonActivitty.this, "Pon un ataque al Pokemon", Toast.LENGTH_SHORT).show(); //mensaje que se muestra al usuario
+            return;
+        }
+        else if(defensaPokemon.isEmpty()){
+            Toast.makeText(addPokemonActivitty.this, "Pon una defensa al Pokemon", Toast.LENGTH_SHORT).show(); //mensaje que se muestra al usuario
+            return;
+        }
+        else if(debilidadPokemon.isEmpty()){
+            Toast.makeText(addPokemonActivitty.this, "Pon una debilidad al Pokemon", Toast.LENGTH_SHORT).show(); //mensaje que se muestra al usuario
             return;
         }
 

@@ -26,11 +26,7 @@
             android:value="AIzaSyBW6DOkEvttbrOvbETDYRWYPapjGbp5n-o" />
 
         <activity
-            android:name=".menu.mapa.Activity_map"
-            android:exported="false"
-            android:label="@string/title_activity_map" />
-        <activity
-            android:name=".menu.vistas.activity_infApp"
+            android:name=".menu.mapa.activity_infApp"
             android:exported="false" />
         <activity
             android:name=".menu.vistas.mostrarFunkosaActivity"

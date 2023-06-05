@@ -40,11 +40,24 @@ public class addEntrenador extends AppCompatActivity {
     public void addEntrenador(View view) {
         String email = String.valueOf(edt_correoRegistro.getText());
         String password = String.valueOf(edt_claveRegistro.getText());
-        //Comprueba si los campos estan vacios
-        if(email.isEmpty() || password.isEmpty() || password.length() < 6){
+        //------------------------------- Validacion--------------------------------
+        if(email.isEmpty() || password.isEmpty()){
             Toast.makeText(addEntrenador.this, "Rellene todos los campos", Toast.LENGTH_SHORT).show(); //mensaje que se muestra al usuario
             return;
         }
+        if(email.isEmpty()){
+            Toast.makeText(addEntrenador.this, "Escriba un correo", Toast.LENGTH_SHORT).show(); //mensaje que se muestra al usuario
+            return;
+        }
+        else if(password.isEmpty()){
+            Toast.makeText(addEntrenador.this, "Escriba una contraseña", Toast.LENGTH_SHORT).show(); //mensaje que se muestra al usuario
+            return;
+        }
+        else if(password.length() < 6){
+            Toast.makeText(addEntrenador.this, "Escriba una contraseña de mas de 6 caracteres", Toast.LENGTH_SHORT).show(); //mensaje que se muestra al usuario
+            return;
+        }
+
         mAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override

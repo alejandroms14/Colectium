@@ -130,6 +130,23 @@ public class MostrarDetallesFunkoActivity extends AppCompatActivity {
         String idFunko = String.valueOf(edt_detalle_idFunko.getText());
         String nombreFunko = String.valueOf(edt_detalle_nombreFunko1.getText());
         String categoriaFunko = String.valueOf(edt_detalle_categoriaFunko.getText());
+        //------------------------------- Validacion--------------------------------
+        if(idFunko.isEmpty() || nombreFunko.isEmpty() || categoriaFunko.isEmpty()){
+            Toast.makeText(MostrarDetallesFunkoActivity.this, "Rellene todos los campos", Toast.LENGTH_SHORT).show(); //mensaje que se muestra al usuario
+            return;
+        }
+        else if(idFunko.isEmpty()){
+            Toast.makeText(MostrarDetallesFunkoActivity.this, "Pon un id al Funko", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        else if(nombreFunko.isEmpty()){
+            Toast.makeText(MostrarDetallesFunkoActivity.this, "Pon un nombre al Funko", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        else if(categoriaFunko.isEmpty()){
+            Toast.makeText(MostrarDetallesFunkoActivity.this, "Pon una categoria al Funko", Toast.LENGTH_SHORT).show();
+            return;
+        }
 
 
         Funko f = new Funko(idFunko,nombreFunko,categoriaFunko);
