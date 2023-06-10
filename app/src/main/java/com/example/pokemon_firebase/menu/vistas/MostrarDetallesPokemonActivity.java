@@ -176,14 +176,14 @@ public class MostrarDetallesPokemonActivity extends AppCompatActivity {
 
             @Override
             public void pokemonIsUpdate() {
-
+                // aquí hay que poner cuando se haya actualizado bien qué hacer
+                Toast.makeText(MostrarDetallesPokemonActivity.this,"actualizacion correcta",Toast.LENGTH_LONG).show();
+                finish();
             }
 
             @Override
             public void pokemonIsDelete() {
-                // aquí hay que poner cuando se haya actualizado bien qué hacer
-                Toast.makeText(MostrarDetallesPokemonActivity.this,"actualizacion correcta",Toast.LENGTH_LONG).show();
-                finish();
+
             }
         },key,p);
     }

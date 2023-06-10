@@ -159,13 +159,13 @@ public class MostrarDetallesFunkoActivity extends AppCompatActivity {
 
             @Override
             public void funkoIsUpdate() {
-
+                Toast.makeText(MostrarDetallesFunkoActivity.this, "actualizacion correcta", Toast.LENGTH_LONG).show();
+                finish();
             }
 
             @Override
             public void funkoIsDelete() {
-                Toast.makeText(MostrarDetallesFunkoActivity.this, "actualizacion correcta", Toast.LENGTH_LONG).show();
-                finish();
+
             }
         },key,f);
     }
