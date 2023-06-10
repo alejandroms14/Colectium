@@ -109,7 +109,7 @@ public class MostrarDetallesFunkoActivity extends AppCompatActivity {
             }
 
         }, key);
-        new ImageFirebase().borrarFoto(new ImageFirebase.FotoStatus() {
+        /*new ImageFirebase().borrarFoto(new ImageFirebase.FotoStatus() {
             @Override
             public void FotoIsDownload(byte[] bytes) {
             }
@@ -120,7 +120,7 @@ public class MostrarDetallesFunkoActivity extends AppCompatActivity {
             public void FotoIsUpload() {
                 Toast.makeText(MostrarDetallesFunkoActivity.this, "foto eliminada correcto", Toast.LENGTH_LONG).show();
             }
-        },f.getFoto());
+        },f.getFoto());*/
 
     }
     //-----------------------------------------------------------------------------------------------
