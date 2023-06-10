@@ -37,6 +37,8 @@ public class MostrarDetallesPokemonActivity extends AppCompatActivity {
     private Pokemon p;
 
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -114,7 +116,7 @@ public class MostrarDetallesPokemonActivity extends AppCompatActivity {
 
 
         }, key);
-        new ImageFirebase().borrarFoto(new ImageFirebase.FotoStatus() {
+        /*new ImageFirebase().borrarFoto(new ImageFirebase.FotoStatus() {
             @Override
             public void FotoIsDownload(byte[] bytes) {
             }
@@ -125,7 +127,7 @@ public class MostrarDetallesPokemonActivity extends AppCompatActivity {
             public void FotoIsUpload() {
                 Toast.makeText(MostrarDetallesPokemonActivity.this, "foto eliminada correcto", Toast.LENGTH_LONG).show();
             }
-        },p.getFoto());
+        },p.getFoto());*/
 
     }
     //-----------------------------------------------------------------------------------------------

@@ -119,20 +119,6 @@
         app:srcCompat="@drawable/pokemon" />
 
     <Button
-        android:id="@+id/btn_detalle_borrarPokemon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bordes_redondos"
-        android:backgroundTint="@android:color/holo_orange_dark"
-        android:onClick="borrar_Pokemon"
-        android:text="@string/borrar"
-        app:layout_constraintBottom_toBottomOf="@+id/btn_detalle_actualizarPokemon"
-        app:layout_constraintEnd_toStartOf="@+id/btn_detalle_actualizarPokemon"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/edt_detalle_debilidadPokemon"
-        tools:ignore="TextContrastCheck" />
-
-    <Button
         android:id="@+id/btn_detalle_actualizarPokemon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -142,7 +128,8 @@
         android:onClick="Actualizar_pokemon"
         android:text="@string/actualizar"
         app:layout_constraintEnd_toEndOf="@+id/img_detalle_fotoPokemon"
-        app:layout_constraintStart_toStartOf="@+id/img_detalle_fotoPokemon"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_detalle_debilidadPokemon"
         app:layout_constraintTop_toBottomOf="@+id/img_detalle_fotoPokemon"
         tools:ignore="TextContrastCheck" />
 
